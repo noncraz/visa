@@ -13,13 +13,13 @@ print(Fore.RED+""""
 ░╚████╔╝░██║░╚═══██╗██╔══██║  ██║░░██╗██╔══██║██╔══╝░░██║░░██╗██╔═██╗░██╔══╝░░██╔══██╗
 ░░╚██╔╝░░██║██████╔╝██║░░██║  ╚█████╔╝██║░░██║███████╗╚█████╔╝██║░╚██╗███████╗██║░░██║
 ░░░╚═╝░░░╚═╝╚═════╝░╚═╝░░╚═╝  ░╚════╝░╚═╝░░╚═╝╚══════╝░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
-                        This Tool For Visa Checker
+                        This Tool For Visa 
                      [!] Coded By @team1577 [!]
 """)
 
 ch = input("""
 1 - Make Combo [ Visa ]
-2 - Check Visa
+
 """)
 
 
@@ -41,7 +41,7 @@ if ch == "1":
         print(visa+"|"+viscr+"/"+vissadata+"|"+visacvc)
         with open(f'{filesave}', 'a') as c:
             c.write(visa +"|"+ viscr +"/"+vissadata+"|"+visacvc+'\n')
-if ch == "2":
+if ch == "":
     from HamodyTools import *
     filevisa = input("[+] Enter List Visa :")
     vises = [line.strip() for line in open(f"{filevisa}")]
