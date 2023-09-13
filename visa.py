@@ -1,4 +1,4 @@
-from random import choice
+from random import choice as densor
 from colorama import Fore, Back, Style
 import colorama
 colorama.init(autoreset=True)
@@ -7,25 +7,24 @@ colorama.init(autoreset=True)
 
 
 print(Fore.RED+""""
-██╗░░░██╗██╗░██████╗░█████╗░  ░█████╗░██╗░░██╗███████╗░█████╗░██╗░░██╗███████╗██████╗░
-██║░░░██║██║██╔════╝██╔══██╗  ██╔══██╗██║░░██║██╔════╝██╔══██╗██║░██╔╝██╔════╝██╔══██╗
-╚██╗░██╔╝██║╚█████╗░███████║  ██║░░╚═╝███████║█████╗░░██║░░╚═╝█████═╝░█████╗░░██████╔╝
-░╚████╔╝░██║░╚═══██╗██╔══██║  ██║░░██╗██╔══██║██╔══╝░░██║░░██╗██╔═██╗░██╔══╝░░██╔══██╗
-░░╚██╔╝░░██║██████╔╝██║░░██║  ╚█████╔╝██║░░██║███████╗╚█████╔╝██║░╚██╗███████╗██║░░██║
-░░░╚═╝░░░╚═╝╚═════╝░╚═╝░░╚═╝  ░╚════╝░╚═╝░░╚═╝╚══════╝░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
-                        This Tool For Visa 
-                     [!] Coded By @team1577 [!]
+██╗░░░██╗██╗░██████╗░█████╗░  
+██║░░░██║██║██╔════╝██╔══██╗  
+╚██╗░██╔╝██║╚█████╗░███████║  
+░╚████╔╝░██║░╚═══██╗██╔══██║  
+░░╚██╔╝░░██║██████╔╝██║░░██║  
+░░░╚═╝░░░╚═╝╚═════╝░╚═╝░░╚═╝  
+                        This Tool For Visa
+                     [!]  By Mr@ittz_danyar @tools_vip [!]
 """)
 
 ch = input("""
 1 - Make Combo [ Visa ]
-
 """)
 
 
 if ch == "1":
     numofvisa = int('16')
-    filesave = 'team1577'+'.txt' # Instead of the name < team1577 > you can add the name of your file
+    filesave = 'Densor'+'.txt' # Instead of the name < Densor > you can add the name of your file
     nums = '123456789'
     while True:
         visa =(''.join((densor(nums) for x in range(numofvisa))))
@@ -41,7 +40,7 @@ if ch == "1":
         print(visa+"|"+viscr+"/"+vissadata+"|"+visacvc)
         with open(f'{filesave}', 'a') as c:
             c.write(visa +"|"+ viscr +"/"+vissadata+"|"+visacvc+'\n')
-if ch == "":
+if ch == "200":
     from HamodyTools import *
     filevisa = input("[+] Enter List Visa :")
     vises = [line.strip() for line in open(f"{filevisa}")]
